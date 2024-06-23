@@ -21,3 +21,153 @@
 .App-link {
   color: #61dafb;
 }
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mr-52 {
+    margin-right: 2rem;
+  }
+
+  .w {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mr-52 {
+    margin-right: 1rem;
+  }
+
+  .w {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mr-52 {
+    margin-right: 0.5rem;
+  }
+
+  .w {
+    width: 100%;
+  }
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.overlapping {
+  background-color: rgba(30, 30, 40, 0.8);
+  width: 100%;
+  height: auto;
+  border-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.textbox {
+  color: white;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.textbox:focus {
+  border: 2px solid #cc4949;
+}
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: #cc4949;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  text-decoration: none;
+}
+.close-button {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+  margin-top: 0.9rem;
+  border-radius: 3px;
+}
+.close-button:hover {
+  background-color: red;
+}
